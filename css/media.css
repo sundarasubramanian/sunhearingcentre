@@ -1,0 +1,30 @@
+/* Responsive breakpoints (mobile-first) */
+
+/* Small devices: >= 600px */
+@media (min-width: 600px){
+  .site-title{font-size:1.25rem;}
+  .nav{ gap: 1rem; }
+  .hidden-sm{display:block;}
+  .show-sm{display:none;}
+  .container{ padding: 1.25rem; }
+}
+
+/* Medium devices: >= 900px */
+@media (min-width: 900px){
+  header .container{
+    height: calc(var(--nav-height) + 8px);
+  }
+  .site-title{font-size:1.5rem;}
+  main.container{ padding-top: 2rem; }
+  .row{ gap:1.25rem; }
+  .col-2{ flex: 0 0 calc(50% - .625rem); }
+  .col-3{ flex: 0 0 calc(33.3333% - .833rem); }
+}
+
+/* Large devices: >= 1200px */
+@media (min-width: 1200px){
+  :root{ --max-width: 1300px; }
+  header .container{ height: var(--nav-height); }
+  .site-title{font-size:1.75rem;}
+  .container{ padding: 1.5rem; }
+}
