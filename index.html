@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sun Hearing Aid Center</title>
+    <meta name="description" content="Sun Hearing Aid Center — hearing tests, fittings, repairs and personalised care." />
+      <!-- Favicons / PWA -->
+    <link rel="icon" href="/favicon.ico" />
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+    <!-- Performance / Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/spacing.css">
+
+      <!-- Theme color for mobile -->
+    <meta name="theme-color" content="#0a74da" />
+
+    <!-- Optional: add SEO / Open Graph -->
+    <meta property="og:title" content="Page Title" />
+    <meta property="og:description" content="Short description of the page" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header role="banner" class="shadow-lg">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm flex-nowrap">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo-Size" width="200px" height="auto" alt="logo_image.png"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="primaryNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" role="main" class="mt90">
+      <!-- Hero / lead -->
+      <section class="hero position-relative overflow-hidden">
+        <div id="customCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" aria-label="Highlights">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active hero-slide" style="background-image: url('images/slide1.png');">
+              <div class="container-fluid carousel-overlay h-100 d-flex align-items-center justify-content-center">
+                <div class="hero-content w-75 text-white">
+                  <h1>Comprehensive Hearing Tests</h1>
+                  <p class="lead">Accurate diagnostics, clear counselling and a personalised care plan.</p>
+                  <a class="btn btn-danger me-2" href="services.html">Book a test</a>
+                  <a class="btn btn-outline-danger" href="contactUs.html">Contact us</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item hero-slide" style="background-image: url('images/slide2.png');">
+              <div class="container-fluid carousel-overlay h-100 d-flex align-items-center justify-content-center">
+                <div class="hero-content w-75 text-white">
+                  <h1>Latest Hearing Aids</h1>
+                  <p class="lead">Discrete, comfortable devices with Bluetooth and adaptive noise reduction.</p>
+                  <a class="btn btn-danger" href="gallery.html">View models</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item hero-slide" style="background-image: url('images/slide3.png');">
+              <div class="container-fluid carousel-overlay h-100 d-flex align-items-center justify-content-center">
+                <div class="hero-content w-75 text-white">
+                  <h1>Custom Fitting & Aftercare</h1>
+                  <p class="lead">Precision fittings, tuning and long‑term support for best outcomes.</p>
+                  <a class="btn btn-danger" href="contactUs.html">Schedule fitting</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Intro + features -->
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="row align-items-start g-4">
+            <div class="col-lg-6">
+              <div class="hero-image-card position-relative mx-auto" aria-hidden="false">
+                <!-- decorative red waveform behind devices -->
+
+                <!-- layered product images -->
+                <img src="images/clinic-img.jpg" alt="Hearing aid model front" class=" hero-card-bg hero-device device-front" loading="lazy">
+                <!-- <img src="images/models/model2.jpeg" alt="Hearing aid model left" class="hero-device device-left" loading="lazy">
+                <img src="images/models/model3.jpeg" alt="Hearing aid model right" class="hero-device device-right" loading="lazy"> -->
+
+                <!-- optional small caption for accessibility/readers -->
+                <span class="visually-hidden">Selection of modern hearing aid devices</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold text-brand">About Our Hearing Aid Centre</h2>
+              <p class="lead">At SUN HEARING CENTRE, we are passionate about helping you hear better for past 30+ year in Tirunelvlei. Our skilled technician conduct detailed hearing test(Pure tone audiogram test) and recommend personalized digital hearing aid solution from trusted brand like Signia hearing aid. </p>
+              <p>Hearing aid consulting and fitting is done in a personalized approach and we understand each client’s lifestyle and budget to recommend the most appropriate solution without hidden cost.</p>
+              <a class="btn btn-outline-danger" href="about.html">About us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Aid Models Section -->
+      <section id="aidModel" class="py-5 bg-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="display-6 fw-bold text-brand mb-2">Explore our hearing aid models</h2>
+
+              <p class="lead text-muted">Discover a range of modern hearing aids designed for comfort, performance and connectivity.</p>
+            </div>
+          </div>
+
+          <!-- Aid Model Cards Grid -->
+          <div class="row g-4 justify-content-center">
+            <!-- Behind-the-Ear (BTE) -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="aid-card h-100">
+                <div class="aid-card-image">
+                  <img src="images/models/model1.jpeg" alt="Behind-the-Ear hearing aid" loading="lazy">
+                </div>
+                <div class="aid-card-body">
+                  <h5 class="aid-card-title">Behind-the-Ear (BTE)</h5>
+                  <p class="aid-card-text small text-muted mb-2">Comfortable and powerful, suitable for most hearing losses.</p>
+                  <ul class="aid-features list-unstyled small mb-3">
+                    <li>✓ Long battery life</li>
+                    <li>✓ Rechargeable options</li>
+                    <li>✓ High power output</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Receiver-in-Canal (RIC) -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="aid-card h-100">
+                <div class="aid-card-image">
+                  <img src="images/models/model2.jpeg" alt="Receiver-in-Canal hearing aid" loading="lazy">
+                </div>
+                <div class="aid-card-body">
+                  <h5 class="aid-card-title">Receiver-in-Canal (RIC)</h5>
+                  <p class="aid-card-text small text-muted mb-2">Discreet and natural sound with easy connectivity.</p>
+                  <ul class="aid-features list-unstyled small mb-3">
+                    <li>✓ Invisible design</li>
+                    <li>✓ Bluetooth ready</li>
+                    <li>✓ Natural hearing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Completely-in-Canal (CIC) -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="aid-card h-100">
+                <div class="aid-card-image">
+                  <img src="images/models/model3.jpeg" alt="Completely-in-Canal hearing aid" loading="lazy">
+                </div>
+                <div class="aid-card-body">
+                  <h5 class="aid-card-title">Completely-in-Canal (CIC)</h5>
+                  <p class="aid-card-text small text-muted mb-2">Nearly invisible, ideal for mild-to-moderate loss.</p>
+                  <ul class="aid-features list-unstyled small mb-3">
+                    <li>✓ Virtually invisible</li>
+                    <li>✓ Low wind noise</li>
+                    <li>✓ Natural sound</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="row mt-4">
+            <div class="col-12 text-center">
+              <p class="mb-2 text-muted">Not sure which model suits you?</p>
+              <a href="contactUs.html" class="btn btn-danger">Book a consultation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Hearing Solutions Section -->
+    
+      <!-- Hero feature with product card (replace the existing intro block if desired) -->
+      <section class="py-5 about-hero-2">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold text-brand">Better Hearing, Better Life</h2>
+              <p class="lead text-muted mb-3">
+                At Sun Hearing Centre, we know hearing well is the key to a confident and connected life. Our expert hearing aid brand give perfect solution.
+              </p>
+              <p class="text-muted mb-4">
+                In hearing aid machine, we have many types and models. In digital hearing aids our Centre have separate best hearing aids for seniors, In-the-ear hearing aids, Bluetooth hearing aids, Rechargeable hearing aids and you enjoy conversations, music and every sound that matters.
+              </p>
+              <a href="about.html" class="btn btn-danger btn-lg rounded-pill">Learn More</a>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="hero-image-card position-relative mx-auto" aria-hidden="false">
+                <!-- decorative red waveform behind devices -->
+
+                <!-- layered product images -->
+                <img src="images/home-img1.jpeg" alt="Hearing aid model front" class=" hero-card-bg hero-device device-front" loading="lazy">
+                <!-- <img src="images/models/model2.jpeg" alt="Hearing aid model left" class="hero-device device-left" loading="lazy">
+                <img src="images/models/model3.jpeg" alt="Hearing aid model right" class="hero-device device-right" loading="lazy"> -->
+
+                <!-- optional small caption for accessibility/readers -->
+                <span class="visually-hidden">Selection of modern hearing aid devices</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brands Section -->
+      <section id="brands" class="brands-section bg-light py-5">
+        <div class="container">
+          <div class="row align-items-center mb-3">
+            <div class="col-md-8">
+              <h2 class="display-6 fw-bold text-brand mb-1 ">Brands we work with</h2>
+              <p class="lead mb-0 text-muted">We fit, service and support leading hearing-aid manufacturers — quality devices for every lifestyle.</p>
+            </div>
+            <div class="col-md-4 text-md-end d-none d-md-block">
+              <a href="gallery.html" class="btn btn-outline-danger btn-sm">See devices</a>
+            </div>
+          </div>
+
+          <!-- Logo grid -->
+          <div class="brands-grid d-flex flex-wrap justify-content-center align-items-center gap-4">
+            <a class="brand-item" href="index.html" target="_blank" rel="noopener noreferrer" aria-label="Signia">
+              <img src="images/brands/brand1.jpeg" alt="Phonak logo" loading="lazy">
+            </a>
+
+            <!-- <a class="brand-item" href="https://www.signia-hearing.com" target="_blank" rel="noopener noreferrer" aria-label="Signia">
+              <img src="images/brands/signia.png" alt="Signia logo" loading="lazy">
+            </a> -->
+          </div>
+
+          <!-- Optional small-screen marquee (uncomment if you want a continuous scroll) -->
+          <!--
+          <div class="brands-marquee mt-3 d-block d-md-none">
+            <div class="marquee-track">
+              <div class="marquee-item"><img src="images/brands/phonak.png" alt="Phonak" loading="lazy"></div>
+              <div class="marquee-item"><img src="images/brands/signia.png" alt="Signia" loading="lazy"></div>
+              <div class="marquee-item"><img src="images/brands/widex.png" alt="Widex" loading="lazy"></div>
+              <div class="marquee-item"><img src="images/brands/oticon.png" alt="Oticon" loading="lazy"></div>
+              <div class="marquee-item"><img src="images/brands/resound.png" alt="ReSound" loading="lazy"></div>
+            </div>
+          </div>
+          -->
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id ="Testimonials" class="bg-white py-5 ">
+        <div class="container">
+          
+          <div class="row g-4">
+            <div class="col-12 text-center">
+              <h2 class="display-6 fw-bold text-brand mb-4">What clients say</h2>
+            </div>
+            <div class="col-md-4">
+              <div class="card p-3 h-100">
+                <p class="mb-2">"The testing was thorough and the fitting was perfect — I hear clearly again."</p>
+                <small class="text-muted">— Mr. R</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card p-3 h-100">
+                <p class="mb-2">"Friendly staff and excellent aftercare."</p>
+                <small class="text-muted">— Ms. S</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card p-3 h-100">
+                <p class="mb-2">"Great devices with easy connectivity."</p>
+                <small class="text-muted">— A. K</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="bg-white py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <div>
+            <h4 class="fw-bold text-brand  mb-1">Ready to improve your hearing?</h4>
+            <p class="mb-0 text-muted">Call us or book an appointment online.</p>
+          </div>
+          <div>
+            <a href="contactUs.html" class="btn btn-danger btn-lg me-2">Book Appointment</a>
+            <a href="tel:+0000000000" class="btn btn-outline-secondary btn-lg">Call: +91 9585877134</a>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="site-footer text-light  shadow">
+      <div class="container-fluid carousel-overlay pt-5 pb-3">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-3">
+            <a class="navbar-brand mb-2 d-inline-block"  href="index.html"><img src="images/logo-white.png" width="200px" height="auto" alt="logo_image.png"/></a>
+            <p class="small text-white fs-5">Better Hearing, Better Life</p>
+
+            <ul class="list-unstyled small mb-0 footer-contact fs-6">
+              <li><strong>Phone:</strong> <a href="tel:+0000000000" class="text-light">+91 9585877134</a></li>
+              <li><strong>Email:</strong> <a href="mailto:sunhearingcentre@gmail.com" class="text-light">sunhearingcentre@gmail.com</a></li>
+              <li><strong>Address:</strong> <b class="fs-6 text-warning text-uppercase "><q>Sun Hearing Centre</q></b>, 18G,S.N.High road,Meeran shopping complex, Near sri rathna theatre, Tirunelvlei-1.</li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h6 class="text-white fw-bold fs-3">Quick links</h6>
+            <ul class="list-unstyled fs-6">
+              <li><a href="index.html" class="text-light"><i class="fa-regular fa-house"></i> Home</a></li>
+              <li><a href="about.html" class="text-light"><i class="fa-solid fa-circle-info"></i> About</a></li>
+              <li><a href="services.html" class="text-light"><i class="fa-solid fa-ear-listen"></i> Services</a></li>
+              <li><a href="gallery.html" class="text-light"><i class="fa-regular fa-images"></i> Gallery</a></li>
+              <li><a href="contactUs.html" class="text-light"><i class="fa-regular fa-envelope"></i> Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h6 class="text-white fw-bold fs-3">Our services</h6>
+            <ul class="list-unstyled fs-6">
+              <li><a href="services.html#tests" class="text-light">Hearing tests</a></li>
+              <li><a href="services.html#fitting" class="text-light">Fitting & tuning</a></li>
+              <li><a href="services.html#repairs" class="text-light">Repairs & aftercare</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h6 class="text-white fw-bold fs-3">Opening hours</h6>
+            <p class="small mb-2 fs-6">
+              Mon – Sat: 10:00 AM – 08:00 PM<br />
+              Sun: Closed
+            </p>
+            <h6 class="text-white fw-bold fs-3">Appointment</h6>
+            <a href="contactUs.html" class="btn btn-sm btn-light mb-2 w-100 text-danger fw-bold">Book now</a>
+          </div>
+        </div>
+
+        <hr class="border-secondary mt-4">
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small">
+          <div class="mb-2 mb-md-0">&copy; <span id="year"></span> Sun Hearing Aid. All rights reserved.</div>
+
+          <div class="social">
+            <a class="text-light me-3" href="#" aria-label="Facebook" title="Facebook">
+              <!-- simple svg icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.84h2.74l-.44 2.89h-2.3V21.9C18.34 21.12 22 16.99 22 12z"/></svg>
+            </a>
+            <a class="text-light me-3" href="#" aria-label="Instagram" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>
+            </a>
+            <a class="text-light" href="#" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 .02 0zM3 6.9h4v12H3zM9 6.9h3.8v1.6h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6v7.3h-4v-6.5c0-1.6 0-3.7-2.3-3.7-2.3 0-2.6 1.8-2.6 3.6v6.6H9z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
