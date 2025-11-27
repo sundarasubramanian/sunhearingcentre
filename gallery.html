@@ -17,8 +17,9 @@
   </head>
 
   <body>
-    <header role="banner" class="shadow-lg">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm flex-nowrap">
+    <!-- Header / Navigation -->
+  <header role="banner" class="shadow-lg">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
           <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo-Size" width="200px" height="auto" alt="logo_image.png"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,129 +39,151 @@
       </nav>
     </header>
 
-    <main class="container py-5 mt90">
-      <div class="row mb-4 align-items-center">
+    <!-- Main Content -->
+    <main id="main" role="main" class="container py-5 mt90">
+      <div class="row mb-5 align-items-center">
         <div class="col-lg-8">
           <h1 class="display-6 fw-bold text-brand mb-2">Gallery</h1>
-          <p class="lead text-muted">A selection of devices, fittings and clinic photos. Click any image to view larger.</p>
+          <p class="lead text-muted">Explore our curated collection of hearing aid devices, fitting sessions and clinic photos.</p>
         </div>
         <div class="col-lg-4 text-lg-end">
           <a href="contactUs.html" class="btn btn-danger">Book a consultation</a>
         </div>
       </div>
 
-      <!-- Gallery grid -->
-      <section id="gallery" aria-labelledby="gallery-heading">
+      <!-- 3x3 Gallery Grid Section -->
+      <section id="gallery" aria-labelledby="gallery-heading" class="py-4">
         <h2 id="gallery-heading" class="visually-hidden">Gallery grid</h2>
 
-        <div class="gallery-grid">
-          <!-- Repeat items; change src + caption text to match your images -->
-          <figure class="gallery-item" tabindex="0">
-            <a class="gallery-link" href="#" data-bs-toggle="modal" data-src="images/gallery/1.jpg" data-caption="Modern behind-the-ear model">
+        <div class="gallery-grid-3x3">
+          <!-- Item 1 -->
+          <figure class="gallery-card" tabindex="0" role="listitem">
+            <div class="gallery-image-wrapper">
               <img class="gallery-img" src="images/gallery/1.jpg" alt="Behind-the-ear hearing aid" loading="lazy">
-              <figcaption class="caption-overlay">
-                <div class="caption-title">Best hearing aids for seniors- easy to use</div>
-                <div class="caption-sub">Comfortable, powerful</div>
-              </figcaption>
-            </a>
+            </div>
+            <figcaption class="gallery-caption">
+              <div class="caption-title text-brand">BTE - Modern (Best hearing aids for seniors- easy to use)</div>
+              <div class="caption-sub">Comfortable, powerful</div>
+            </figcaption>
+            <a href="#" class="gallery-link stretched-link" data-bs-toggle="modal" data-src="images/gallery/1.jpg" data-caption="BTE - Modern (Best hearing aids for seniors- easy to use)"></a>
           </figure>
 
-          <figure class="gallery-item" tabindex="0">
-            <a class="gallery-link" href="#" data-bs-toggle="modal" data-src="images/gallery/2.jpg" data-caption="Rechargeable in-ear model">
+          <!-- Item 2 -->
+          <figure class="gallery-card" tabindex="0" role="listitem">
+            <div class="gallery-image-wrapper">
               <img class="gallery-img" src="images/gallery/2.jpg" alt="Rechargeable in-ear hearing aid" loading="lazy">
-              <figcaption class="caption-overlay">
-                <div class="caption-title">Signia hearing aid fitting centre</div>
-                <div class="caption-sub">Discreet & reliable</div>
-              </figcaption>
-            </a>
+            </div>
+            <figcaption class="gallery-caption">
+              <div class="caption-title text-brand">Rechargeable ITE (Signia hearing aid fitting centre)</div>
+              <div class="caption-sub">Discreet & reliable</div>
+            </figcaption>
+            <a href="#" class="gallery-link stretched-link" data-bs-toggle="modal" data-src="images/gallery/2.jpg" data-caption="Rechargeable ITE (Signia hearing aid fitting centre)"></a>
           </figure>
 
-          <figure class="gallery-item" tabindex="0">
-            <a class="gallery-link" href="#" data-bs-toggle="modal" data-src="images/gallery/3.jpg" data-caption="Fitting session in clinic">
+          <!-- Item 3 -->
+          <figure class="gallery-card" tabindex="0" role="listitem">
+            <div class="gallery-image-wrapper">
               <img class="gallery-img" src="images/gallery/3.jpg" alt="Audiologist fitting hearing aid" loading="lazy">
-              <figcaption class="caption-overlay">
-                <div class="caption-title">Invisible hearing aids- in ear hearing aid</div>
-                <div class="caption-sub">Personalised programming</div>
-              </figcaption>
-            </a>
+            </div>
+            <figcaption class="gallery-caption">
+              <div class="caption-title text-brand">Fitting session (Invisible hearing aids- in ear hearing aid)</div>
+              <div class="caption-sub">Personalised programming</div>
+            </figcaption>
+            <a href="#" class="gallery-link stretched-link" data-bs-toggle="modal" data-src="images/gallery/3.jpg" data-caption="Fitting session(Invisible hearing aids- in ear hearing aid)"></a>
           </figure>
 
-          <figure class="gallery-item" tabindex="0">
-            <a class="gallery-link" href="#" data-bs-toggle="modal" data-src="images/gallery/4.jpg" data-caption="Compact CIC model">
+          <!-- Item 4 -->
+          <figure class="gallery-card" tabindex="0" role="listitem">
+            <div class="gallery-image-wrapper">
               <img class="gallery-img" src="images/gallery/4.jpg" alt="Completely in canal hearing aid" loading="lazy">
-              <figcaption class="caption-overlay">
-                <div class="caption-title">Hearing aid machine – super power BTE</div>
-                <div class="caption-sub">Nearly invisible</div>
-              </figcaption>
-            </a>
+            </div>
+            <figcaption class="gallery-caption">
+              <div class="caption-title text-brand">CIC - Compact (Hearing aid machine – super power BTE)</div>
+              <div class="caption-sub">Nearly invisible</div>
+            </figcaption>
+            <a href="#" class="gallery-link stretched-link" data-bs-toggle="modal" data-src="images/gallery/4.jpg" data-caption="CIC - Compact (Hearing aid machine – super power BTE)"></a>
           </figure>
 
-          <figure class="gallery-item" tabindex="0">
-            <a class="gallery-link" href="#" data-bs-toggle="modal" data-src="images/gallery/5.jpg" data-caption="Hearing aid charging case">
+          <!-- Item 5 -->
+          <figure class="gallery-card" tabindex="0" role="listitem">
+            <div class="gallery-image-wrapper">
               <img class="gallery-img" src="images/gallery/5.jpg" alt="Hearing aid charging case" loading="lazy">
-              <figcaption class="caption-overlay">
-                <div class="caption-title">Small rechargable hearing aid- very small and powerful for both ear.</div>
-                <div class="caption-sub">Quick top-up</div>
-              </figcaption>
-            </a>
+            </div>
+            <figcaption class="gallery-caption">
+              <div class="caption-title text-brand">Charging case (Small rechargable hearing aid- very small and powerful for both ear)</div>
+              <div class="caption-sub">Quick top-up</div>
+            </figcaption>
+            <a href="#" class="gallery-link stretched-link" data-bs-toggle="modal" data-src="images/gallery/5.jpg" data-caption="Charging case (Small rechargable hearing aid- very small and powerful for both ear)"></a>
           </figure>
 
-          <figure class="gallery-item" tabindex="0">
-            <a class="gallery-link" href="#" data-bs-toggle="modal" data-src="images/gallery/6.jpg" data-caption="Clinic interior">
+          <!-- Item 6 -->
+          <figure class="gallery-card" tabindex="0" role="listitem">
+            <div class="gallery-image-wrapper">
               <img class="gallery-img" src="images/gallery/6.jpg" alt="Clinic interior" loading="lazy">
-              <figcaption class="caption-overlay">
-                <div class="caption-title">In ear small digital hearing aid- made in Germany</div>
-                <div class="caption-sub">Comfortable environment</div>
-              </figcaption>
-            </a>
+            </div>
+            <figcaption class="gallery-caption">
+              <div class="caption-title text-brand">Clinic interior (In ear small digital hearing aid- made in Germany)</div>
+              <div class="caption-sub">Comfortable environment</div>
+            </figcaption>
+            <a href="#" class="gallery-link stretched-link" data-bs-toggle="modal" data-src="images/gallery/6.jpg" data-caption="Clinic interior (In ear small digital hearing aid- made in Germany)"></a>
           </figure>
 
-          <figure class="gallery-item" tabindex="0">
-            <a class="gallery-link" href="#" data-bs-toggle="modal" data-src="images/gallery/7.jpg" data-caption="Device demo">
+          <!-- Item 7 -->
+          <figure class="gallery-card" tabindex="0" role="listitem">
+            <div class="gallery-image-wrapper">
               <img class="gallery-img" src="images/gallery/7.jpg" alt="Device demo" loading="lazy">
-              <figcaption class="caption-overlay">
-                <div class="caption-title">Rechargeable hearing aid-at affortable price.</div>
-                <div class="caption-sub">Try before you buy</div>
-              </figcaption>
-            </a>
+            </div>
+            <figcaption class="gallery-caption">
+              <div class="caption-title text-brand">Device demo (Rechargeable hearing aid-at affortable price)</div>
+              <div class="caption-sub">Try before you buy</div>
+            </figcaption>
+            <a href="#" class="gallery-link stretched-link" data-bs-toggle="modal" data-src="images/gallery/7.jpg" data-caption="Device demo (Rechargeable hearing aid-at affortable price)"></a>
           </figure>
 
-          <figure class="gallery-item" tabindex="0">
-            <a class="gallery-link" href="#" data-bs-toggle="modal" data-src="images/gallery/8.jpg" data-caption="In-ear custom fit">
+          <!-- Item 8 -->
+          <figure class="gallery-card" tabindex="0" role="listitem">
+            <div class="gallery-image-wrapper">
               <img class="gallery-img" src="images/gallery/8.jpg" alt="Custom in-ear hearing aid" loading="lazy">
-              <figcaption class="caption-overlay">
-                <div class="caption-title">PTA tesing and hearing aid consulting.</div>
-                <div class="caption-sub">Tailored comfort</div>
-              </figcaption>
-            </a>
+            </div>
+            <figcaption class="gallery-caption">
+              <div class="caption-title text-brand">Custom ITE (PTA tesing and hearing aid consulting)</div>
+              <div class="caption-sub">Tailored comfort</div>
+            </figcaption>
+            <a href="#" class="gallery-link stretched-link" data-bs-toggle="modal" data-src="images/gallery/8.jpg" data-caption="Custom ITE (PTA tesing and hearing aid consulting)"></a>
           </figure>
 
-          <figure class="gallery-item" tabindex="0">
-            <a class="gallery-link" href="#" data-bs-toggle="modal" data-src="images/gallery/8.jpg" data-caption="In-ear custom fit">
-              <img class="gallery-img" src="images/gallery/9.jpg" alt="Custom in-ear hearing aid" loading="lazy">
-              <figcaption class="caption-overlay">
-                <div class="caption-title">Bluetooth hearing machine-at affortable price.</div>
-                <div class="caption-sub">Tailored comfort</div>
-              </figcaption>
-            </a>
+          <!-- Item 9 -->
+          <figure class="gallery-card" tabindex="0" role="listitem">
+            <div class="gallery-image-wrapper">
+              <img class="gallery-img" src="images/gallery/9.jpg" alt="Hearing aid accessories" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div class="caption-title text-brand">Accessories (Bluetooth hearing machine-at affortable price)</div>
+              <div class="caption-sub">Spare tips & cleaners</div>
+            </figcaption>
+            <a href="#" class="gallery-link stretched-link" data-bs-toggle="modal" data-src="images/gallery/9.jpg" data-caption="Accessories (Bluetooth hearing machine-at affortable price)"></a>
           </figure>
         </div>
       </section>
     </main>
 
-    <!-- Bootstrap modal used as simple lightbox -->
+    <!-- Lightbox Modal -->
     <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content bg-transparent border-0">
-          <div class="modal-body p-0 position-relative">
+          <div class="modal-body p- position-relative">
             <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-            <img id="lightboxImage" src="" alt="" class="img-fluid w-100 rounded">
-            <div id="lightboxCaption" class="lightbox-caption small text-white mt-2"></div>
+            <div class="row justify-content-center align-items-center">
+              <div class="col-11 text-center"><img id="lightboxImage" src="" alt="" class="img-fluid w-100 rounded"/></div>
+              <div class="col-10 text-center text-brand bg-light">
+                <p id="lightboxCaption" class="lightbox-caption display-6 fw-bold text-brand mb-0 p-1"></p></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer -->
+
+   <!-- Footer -->
     <footer class="site-footer text-light  shadow">
       <div class="container-fluid carousel-overlay pt-5 pb-3">
         <div class="row gy-4 justify-content-center">
@@ -227,38 +250,41 @@
       </div>
     </footer>
 
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      // lightbox: populate modal image and caption
-      (function(){
+      (function () {
         const modalEl = document.getElementById('lightboxModal');
         const lightbox = new bootstrap.Modal(modalEl);
         const imgEl = document.getElementById('lightboxImage');
         const capEl = document.getElementById('lightboxCaption');
 
-        document.querySelectorAll('.gallery-link').forEach(link=>{
-          link.addEventListener('click', function(e){
-            e.preventDefault();
-            const src = this.getAttribute('data-src');
-            const caption = this.getAttribute('data-caption') || '';
-            imgEl.src = src;
-            imgEl.alt = caption;
-            capEl.textContent = caption;
-            lightbox.show();
-          });
+        // Lightbox open on gallery link click
+        document.addEventListener('click', function (e) {
+          const a = e.target.closest('.gallery-link');
+          if (!a) return;
+          e.preventDefault();
+          const src = a.getAttribute('data-src');
+          const caption = a.getAttribute('data-caption') || '';
+          imgEl.src = src;
+          imgEl.alt = caption;
+          capEl.textContent = caption;
+          lightbox.show();
         });
 
-        // keyboard: open focused item with Enter
-        document.querySelectorAll('.gallery-item').forEach(item=>{
-          item.addEventListener('keydown', function(e){
-            if(e.key === 'Enter' || e.key === ' ') {
+        // Keyboard support: Enter/Space to open
+        document.querySelectorAll('.gallery-card').forEach(item => {
+          item.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
               const a = this.querySelector('.gallery-link');
-              if(a){ a.click(); e.preventDefault(); }
+              if (a) a.click();
+              e.preventDefault();
             }
           });
         });
 
-        // set year
+        // Set copyright year
         const yearEl = document.getElementById('year');
         if (yearEl) yearEl.textContent = new Date().getFullYear();
       })();
