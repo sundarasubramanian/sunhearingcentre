@@ -14,15 +14,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Animation Plugin -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/spacing.css">
+
+    <!-- WhatsApp floating button styles -->
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        right: 20px;
+        bottom: 60px;
+        z-index: 9999;
+        width: 56px;
+        height: 56px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #25D366;
+        color: #fff;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+        border-radius: 50%;
+        font-size: 24px;
+        text-decoration: none;
+        transition: transform .15s ease;
+      }
+      .whatsapp-float:hover { transform: translateY(-4px); }
+        /* Responsive styles */
+      @media (max-width: 768px) {
+        .whatsapp-float {
+          right: 15px;
+          bottom: 50px;
+          width: 50px;
+          height: 50px;
+          font-size: 20px;
+        }
+      }
+      @media (max-width: 480px) {
+        .whatsapp-float {
+          right: 12px;
+          bottom: 40px;
+          width: 44px;
+          height: 44px;
+          font-size: 18px;
+        }
+      }
+    </style>
 
       <!-- Theme color for mobile -->
     <meta name="theme-color" content="#0a74da" />
 
     <!-- Optional: add SEO / Open Graph -->
-    <meta property="og:title" content="Page Title" />
-    <meta property="og:description" content="Short description of the page" />
+    <meta property="og:title" content="Sun Hearing Aid Center" />
+    <meta property="og:description" content="Sun Hearing Aid Center — hearing tests, fittings, repairs and personalised care." />
     <meta property="og:type" content="website" />
   </head>
   <body>
@@ -62,8 +106,8 @@
                 <div class="hero-content w-75 text-white">
                   <h1>Comprehensive Hearing Tests</h1>
                   <p class="lead">Accurate diagnostics, clear counselling and a personalised care plan.</p>
-                  <a class="btn btn-danger me-2" href="services.html">Book a test</a>
-                  <a class="btn btn-outline-danger" href="contactUs.html">Contact us</a>
+                  <a class="btn btn-danger me-2 mt-1" href="services.html">Book a test</a>
+                  <a class="btn btn-outline-danger mt-1" href="contactUs.html">Contact us</a>
                 </div>
               </div>
             </div>
@@ -103,23 +147,18 @@
         <div class="container">
           <div class="row align-items-start g-4">
             <div class="col-lg-6">
-              <div class="hero-image-card mx-auto" aria-hidden="false">
+              <div class="hero-image-card mx-auto"  aria-hidden="false" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                 <!-- decorative red waveform behind devices -->
 
                 <!-- layered product images -->
                 <img src="images/clinic-img.jpg" alt="Hearing aid model front" class="h-100 w-100 hero-card-bg hero-device device-front" loading="lazy">
-                <!-- <img src="images/models/model2.jpeg" alt="Hearing aid model left" class="hero-device device-left" loading="lazy">
-                <img src="images/models/model3.jpeg" alt="Hearing aid model right" class="hero-device device-right" loading="lazy"> -->
-
-                <!-- optional small caption for accessibility/readers -->
-                <span class="visually-hidden">Selection of modern hearing aid devices</span>
               </div>
             </div>
-            <div class="col-lg-6">
-              <h2 class="display-6 fw-bold text-brand mt-5">About Our Hearing Aid Centre</h2>
-              <p class="lead">At SUN HEARING CENTRE, we are passionate about helping you hear better for past 30+ year in Tirunelvlei. Our skilled technician conduct detailed hearing test(Pure tone audiogram test) and recommend personalized digital hearing aid solution from trusted brand like Signia hearing aid. </p>
-              <p>Hearing aid consulting and fitting is done in a personalized approach and we understand each client’s lifestyle and budget to recommend the most appropriate solution without hidden cost.</p>
-              <a class="btn btn-outline-danger" href="about.html">About us</a>
+            <div class="col-lg-6" >
+              <h2 class="display-6 fw-bold text-brand mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">About Our Hearing Aid Centre</h2>
+              <p class="lead" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">At SUN HEARING CENTRE, we are passionate about helping you hear better for past 30+ year in Tirunelvlei. Our skilled technician conduct detailed hearing test(Pure tone audiogram test) and recommend personalized digital hearing aid solution from trusted brand like Signia hearing aid. </p>
+              <p data-aos="fade-up" data-aos-delay="200">Hearing aid consulting and fitting is done in a personalized approach and we understand each client’s lifestyle and budget to recommend the most appropriate solution without hidden cost.</p>
+              <a class="btn btn-outline-danger" href="about.html" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">About us</a>
             </div>
           </div>
         </div>
@@ -128,19 +167,19 @@
       <!-- Aid Models Section -->
       <section id="aidModel" class="py-5 bg-light">
         <div class="container">
-          <div class="row mb-4">
+          <div class="row mb-4" >
             <div class="col-12 text-center">
-              <h2 class="display-6 fw-bold text-brand mb-2">Explore our hearing aid models</h2>
+              <h2 class="display-6 fw-bold text-brand mb-2" data-aos="fade-up" data-aos-duration="1000">Explore our hearing aid models</h2>
 
-              <p class="lead text-muted">Discover a range of modern hearing aids designed for comfort, performance and connectivity.</p>
+              <p class="lead text-muted" data-aos="fade-up" data-aos-duration="1000">Discover a range of modern hearing aids designed for comfort, performance and connectivity.</p>
             </div>
           </div>
 
           <!-- Aid Model Cards Grid -->
           <div class="row g-4 justify-content-center">
             <!-- Behind-the-Ear (BTE) -->
-            <div class="col-sm-6 col-lg-3">
-              <div class="aid-card h-100">
+            <div class="col-sm-6 col-lg-3" >
+              <div class="aid-card h-100" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
                 <div class="aid-card-image">
                   <img src="images/models/model1.jpeg" alt="Behind-the-Ear hearing aid" loading="lazy">
                 </div>
@@ -157,8 +196,8 @@
             </div>
 
             <!-- Receiver-in-Canal (RIC) -->
-            <div class="col-sm-6 col-lg-3">
-              <div class="aid-card h-100">
+            <div class="col-sm-6 col-lg-3" >
+              <div class="aid-card h-100" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                 <div class="aid-card-image">
                   <img src="images/models/model2.jpeg" alt="Receiver-in-Canal hearing aid" loading="lazy">
                 </div>
@@ -175,8 +214,8 @@
             </div>
 
             <!-- Completely-in-Canal (CIC) -->
-            <div class="col-sm-6 col-lg-3">
-              <div class="aid-card h-100">
+            <div class="col-sm-6 col-lg-3" >
+              <div class="aid-card h-100" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <div class="aid-card-image">
                   <img src="images/models/model3.jpeg" alt="Completely-in-Canal hearing aid" loading="lazy">
                 </div>
@@ -194,10 +233,10 @@
           </div>
 
           <!-- CTA -->
-          <div class="row mt-4">
+          <div class="row mt-4" >
             <div class="col-12 text-center">
-              <p class="mb-2 text-muted">Not sure which model suits you?</p>
-              <a href="contactUs.html" class="btn btn-danger">Book a consultation</a>
+              <p class="mb-2 text-muted" data-aos="fade-up" data-aos-duration="1000" >Not sure which model suits you?</p>
+              <a href="contactUs.html" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="btn btn-danger">Book a consultation</a>
             </div>
           </div>
         </div>
@@ -210,18 +249,18 @@
         <div class="container">
           <div class="row align-items-center g-4">
             <div class="col-lg-6">
-              <h2 class="display-6 fw-bold text-brand">Better Hearing, Better Life</h2>
-              <p class="lead text-muted mb-3">
+              <h2 class="display-6 fw-bold text-brand"  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Better Hearing, Better Life</h2>
+              <p class="lead text-muted mb-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 At Sun Hearing Centre, we know hearing well is the key to a confident and connected life. Our expert hearing aid brand give perfect solution.
               </p>
-              <p class="text-muted mb-4">
+              <p class="text-muted mb-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                 In hearing aid machine, we have many types and models. In digital hearing aids our Centre have separate best hearing aids for seniors, In-the-ear hearing aids, Bluetooth hearing aids, Rechargeable hearing aids and you enjoy conversations, music and every sound that matters.
               </p>
-              <a href="about.html" class="btn btn-danger btn-lg rounded-pill">Learn More</a>
+              <a href="about.html" class="btn btn-danger btn-lg rounded-pill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Learn More</a>
             </div>
 
-            <div class="col-lg-6">
-              <div class="hero-image-card position-relative mx-auto" aria-hidden="false">
+            <div class="col-lg-6" >
+              <div class="hero-image-card position-relative mx-auto" aria-hidden="false" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                 <!-- decorative red waveform behind devices -->
 
                 <!-- layered product images -->
@@ -240,18 +279,18 @@
       <!-- Brands Section -->
       <section id="brands" class="brands-section bg-light py-5">
         <div class="container">
-          <div class="row align-items-center mb-3">
+          <div class="row align-items-center mb-3" >
             <div class="col-md-8">
-              <h2 class="display-6 fw-bold text-brand mb-1 ">Brands we work with</h2>
-              <p class="lead mb-0 text-muted">We fit, service and support leading hearing-aid manufacturers — quality devices for every lifestyle.</p>
+              <h2 class="display-6 fw-bold text-brand mb-1 " data-aos="fade-up" data-aos-duration="1000">Brands we work with</h2>
+              <p class="lead mb-0 text-muted" data-aos="fade-up" data-aos-duration="1000">We fit, service and support leading hearing-aid manufacturers — quality devices for every lifestyle.</p>
             </div>
             <div class="col-md-4 text-md-end d-none d-md-block">
-              <a href="gallery.html" class="btn btn-outline-danger btn-sm">See devices</a>
+              <a href="gallery.html" class="btn btn-outline-danger btn-sm" data-aos="fade-up" data-aos-duration="1000">See devices</a>
             </div>
           </div>
 
           <!-- Logo grid -->
-          <div class="brands-grid d-flex flex-wrap justify-content-center align-items-center gap-4">
+          <div class="brands-grid d-flex flex-wrap justify-content-center align-items-center gap-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <a class="brand-item" href="index.html" target="_blank" rel="noopener noreferrer" aria-label="Signia">
               <img src="images/brands/brand1.jpeg" alt="Phonak logo" loading="lazy">
             </a>
@@ -281,25 +320,28 @@
         <div class="container">
           
           <div class="row g-4">
-            <div class="col-12 text-center">
-              <h2 class="display-6 fw-bold text-brand mb-4">What clients say</h2>
+            <div class="col-12 text-center" >
+              <h2 class="display-6 fw-bold text-brand mb-4" data-aos="fade-up" data-aos-duration="1000">What clients say</h2>
             </div>
-            <div class="col-md-4">
-              <div class="card p-3 h-100">
-                <p class="mb-2">"The testing was thorough and the fitting was perfect — I hear clearly again."</p>
-                <small class="text-muted">— Mr. R</small>
+            <div class="col-md-4" >
+              <div class="card p-3 h-100" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+                <p class="mb-2">"Its very good service from sunhearing centre,really good hearing aid for my mom.very small hearing aid and very clear"</p>
+                <small class="text-muted fw-bold">— Mohan Babu, Tirunelvlei-Town</small>
+                <p><i class="fa-solid fa-star text-warning"></i> - 5.0</p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card p-3 h-100">
-                <p class="mb-2">"Friendly staff and excellent aftercare."</p>
-                <small class="text-muted">— Ms. S</small>
+            <div class="col-md-4" >
+              <div class="card p-3 h-100" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                <p class="mb-2">"Good explanation for digital ear machine.now I m happy with my ear in hearing aid."</p>
+                <small class="text-muted fw-bold">— Anand Kumar, Tirunelveli-KTC Nagar</small>
+                <p><i class="fa-solid fa-star text-warning"></i> - 5.0</p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card p-3 h-100">
-                <p class="mb-2">"Great devices with easy connectivity."</p>
-                <small class="text-muted">— A. K</small>
+            <div class="col-md-4" >
+              <div class="card p-3 h-100" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+                <p class="mb-2">"Good place to buy digital ear machine and staff are very kind and explain about rechargeble hearing aid looking good."</p>
+                <small class="text-muted fw-bold">— Sankaran, Tirunelveli-Pettai</small>
+                <p><i class="fa-solid fa-star text-warning"></i> - 5.0</p>
               </div>
             </div>
           </div>
@@ -307,10 +349,10 @@
       </section>
 
       <!-- Contact CTA -->
-      <section class="bg-white py-3">
+      <section class="bg-white py-3"  data-aos="fade-up" data-aos-duration="1000">
         <div class="container row g-0 justify-content-between align-items-center">
           <div class="col-12 col-md-6 text-start">
-            <h4 class="fw-bold text-brand  mb-1">Ready to improve your hearing?</h4>
+            <h4 class="fw-bold text-brand  mb-1" >Ready to improve your hearing?</h4>
             <p class="mb-0 text-muted">Call us or book an appointment online.</p>
           </div>
           <div class="col-12 col-md-6 text-md-end text-start">
@@ -363,25 +405,21 @@
               Sun: Closed
             </p>
             <h6 class="text-white fw-bold fs-3">Appointment</h6>
-            <a href="contactUs.html" class="btn btn-sm btn-light mb-2 w-100 text-danger fw-bold">Book now</a>
+            <a href="contactUs.html" class="btn btn-sm btn-light mb-2 w-auto text-danger fw-bold">Book now</a>
           </div>
         </div>
 
         <hr class="border-secondary mt-4">
 
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small">
-          <div class="mb-2 mb-md-0">&copy; <span id="year"></span> Sun Hearing Aid. All rights reserved.</div>
+          <div class="mb-2 mb-md-0">&copy; <span id="year"></span> Sun Hearing Aid. All rights reserved. Designed & Build by <span class=" rounded p-1 mt10 fw-bold text-white" style="background:linear-gradient(45deg, #0b4b8a, #000);">Sundarasubramanian</span></div>
 
           <div class="social">
-            <a class="text-light me-3" href="#" aria-label="Facebook" title="Facebook">
-              <!-- simple svg icon -->
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.84h2.74l-.44 2.89h-2.3V21.9C18.34 21.12 22 16.99 22 12z"/></svg>
-            </a>
-            <a class="text-light me-3" href="#" aria-label="Instagram" title="Instagram">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>
-            </a>
-            <a class="text-light" href="#" aria-label="LinkedIn" title="LinkedIn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 .02 0zM3 6.9h4v12H3zM9 6.9h3.8v1.6h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6v7.3h-4v-6.5c0-1.6 0-3.7-2.3-3.7-2.3 0-2.6 1.8-2.6 3.6v6.6H9z"/></svg>
+            <a class="text-light" href="https://wa.me/9585877134" aria-label="Whatsapp" title="Whatsapp">
+              <!-- Whatsapp SVG icon -->
+              <svg  width="18" height="18" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 24 24">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -389,6 +427,21 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <!-- AOS Animation Plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: false,
+        mirror: true,
+        offset: 100
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/919585877134" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+
   </body>
 </html>
